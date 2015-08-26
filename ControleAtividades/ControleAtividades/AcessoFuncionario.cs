@@ -77,5 +77,10 @@ namespace ControleAtividades
             }
             else { return false; }
         }
+
+        public void guardarnome(string nome)
+        {
+            Nome = nome;
+        }
     }
 }

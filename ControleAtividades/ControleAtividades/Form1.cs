@@ -20,7 +20,7 @@ namespace ControleAtividades
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(TI.Conexao.criar_Conexao());
+            TI.Conexao.criar_Conexao();
 
         }
 
@@ -29,7 +29,9 @@ namespace ControleAtividades
             if (func.buscarfunc(txtLogin.Text, txtSenha.Text))
             {
                 MessageBox.Show("Bem-vindo " + func.Nome.ToString() + "");
+                func.guardarnome(func.Nome.ToString());
                 TelaInicio tela = new TelaInicio();
+                tela.Text = "Bem-vindo "+ func.Nome.ToString() + "! ("+DateTime.Now.ToLongDateString() + " às " + DateTime.Now.ToShortTimeString() +")";
                 this.Hide();
                 tela.ShowDialog();
                 this.Show();

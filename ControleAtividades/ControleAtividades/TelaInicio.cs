@@ -12,9 +12,17 @@ namespace ControleAtividades
 {
     public partial class TelaInicio : Form
     {
+        AcessoFuncionario func = new AcessoFuncionario();
         public TelaInicio()
         {
             InitializeComponent();
+            
+        }
+
+        private void TelaInicio_Load(object sender, EventArgs e)
+        {
+
+            
         }
     }
 }
