@@ -24,5 +24,13 @@ namespace ControleAtividades
 
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TelaNovaAtividade tela = new TelaNovaAtividade();
+            this.Hide();
+            tela.ShowDialog();
+            
+        }
     }
 }

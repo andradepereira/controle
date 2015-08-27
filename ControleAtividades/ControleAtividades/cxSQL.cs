@@ -6,7 +6,7 @@ using MySql.Data.MySqlClient;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace TI
+namespace Conexao
 {
     class Conexao
     {

@@ -98,7 +98,7 @@ namespace TI
         private void carregar_tabela(String comando)
         {
             tabela_memoria = new DataTable();
-            comando_sql = new MySqlDataAdapter(comando, Conexao.Conectar);
+            comando_sql = new MySqlDataAdapter(comando, Conexao.Conexao.Conectar);
             executar_comando = new MySqlCommandBuilder(comando_sql);
             comando_sql.Fill(tabela_memoria);
         }
